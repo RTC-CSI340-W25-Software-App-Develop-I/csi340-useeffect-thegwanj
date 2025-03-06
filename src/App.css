@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poller+One&display=swap");
+
+.App {
+  text-align: center;
+  background-color: black;
+  color: yellow;
+  font-family: "Star Jedi", sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+.App h1 {
+  font-family: "Poller One", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.cards {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.card:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.card-detail {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: left;
+  border: 2px solid yellow;
+}
+
+.card-detail h2 {
+  text-transform: capitalize;
+  color: yellow;
+}
+
+button {
+  background-color: yellow;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
